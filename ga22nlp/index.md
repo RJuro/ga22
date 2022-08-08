@@ -1,4 +1,5 @@
-# Welcome to Business Data Science 2022 🚀
+# Welcome to the Globelics Academy 2022 - NLP Workshop 🚀
+Roman Jurowetzki, Aalborg University Business School
 
 
 ```{figure} https://source.unsplash.com/KMn4VEeEPR8

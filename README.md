@@ -1,6 +1,5 @@
-# Business Data Science
+# GA2022 NLP Workshop
 
-a cool book on DS4B
 
 ## Usage
 
@@ -10,11 +9,11 @@ If you'd like to develop and/or build the Business Data Science book, you should
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-3. (Optional) Edit the books source files located in the `business_data_science/` directory
-4. Run `jupyter-book clean business_data_science/` to remove any existing builds
-5. Run `jupyter-book build business_data_science/`
+3. (Optional) Edit the books source files located in the `ga22nlp/` directory
+4. Run `jupyter-book clean ga22nlp/` to remove any existing builds
+5. Run `jupyter-book build ga22nlp/`
 
-A fully-rendered HTML version of the book will be built in `business_data_science/_build/html/`.
+A fully-rendered HTML version of the book will be built in `ga22nlp/_build/html/`.
 
 ### Hosting the book
 
