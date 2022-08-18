@@ -1,18 +1,18 @@
 # Globelics Academy 2022
-## NLP Workshop 🚀
+## Data Science Workshop 🚀
 ### Roman Jurowetzki, Aalborg University Business School
 
 
-```{figure} https://source.unsplash.com/KMn4VEeEPR8
+```{figure} https://source.unsplash.com/5zLhWqntDQA
 :height: 300px
 :name: figure-example
 
-Source: Sean Oulashin, Unsplash
+Source: Jyrki Nieminen, Unsplash
 ```
 
-Wherever you are, enjoy your summer. Practicalities will be available soon on moodle and here.
+Welcome to the workshop website. Here you will find all material from my lectures including slides, tutorial notebooks and collection of useful material.
 
 
-```{admonition} Can't wait? 😉
-If you can't wait to get started, we put together some resources 👉 [here](/info/prepare)
+```{admonition} Usefull stuff 😉
+Have a look at the collection of useful material (I think) 👉 [here](/info/prepare)
 ```
