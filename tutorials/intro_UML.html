@@ -315,7 +315,7 @@ title="Print to PDF"
 <img alt="" src="https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/lter_penguins.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># standard packaging</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># standard packaging</span>
 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -329,7 +329,7 @@ title="Print to PDF"
 <p>In case you have a few minutes:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;700&quot; height=&quot;400&quot; src=&quot;https://www.youtube-nocookie.com/embed/QS5jpQ6cpsg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;700&quot; height=&quot;400&quot; src=&quot;https://www.youtube-nocookie.com/embed/QS5jpQ6cpsg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -338,7 +338,7 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the dataset from GitHub - original source</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the dataset from GitHub - original source</span>
 
 <span class="n">penguins</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://github.com/allisonhorst/palmerpenguins/raw/5b5891f01b52ae26ad8cb9755ec93672f49328a8/data/penguins_size.csv&quot;</span><span class="p">)</span>
 </pre></div>
@@ -347,7 +347,7 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the data</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the data</span>
 
 <span class="n">penguins</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -438,7 +438,7 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop all missing observations and count up the birds for each species</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop all missing observations and count up the birds for each species</span>
 
 <span class="n">penguins</span> <span class="o">=</span> <span class="n">penguins</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 <span class="n">penguins</span><span class="o">.</span><span class="n">species_short</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -457,7 +457,7 @@ Name: species_short, dtype: int64
 <p><img alt="" src="https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/culmen_depth.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s check out the data visually</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s check out the data visually</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">penguins</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;species_short&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;reg&quot;</span><span class="p">,</span> <span class="n">corner</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">],</span> <span class="n">plot_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;line_kws&#39;</span><span class="p">:{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="s1">&#39;white&#39;</span><span class="p">}})</span>
 </pre></div>
@@ -481,7 +481,7 @@ Name: species_short, dtype: int64
 <p>Before we can do any machine learning, it is a good idea to scale the data. Most algorithms are not agnostic to magnitudes and bringing all variables on the same scale is therefore crucial.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># We load up Standard Scaler from sklearn</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># We load up Standard Scaler from sklearn</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 </pre></div>
@@ -490,7 +490,7 @@ Name: species_short, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># And scale all relevant variables into a new matrix (numpy)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># And scale all relevant variables into a new matrix (numpy)</span>
 
 <span class="n">scaled_penguins</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">penguins</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;culmen_length_mm&#39;</span><span class="p">:</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">])</span>
 </pre></div>
@@ -499,7 +499,7 @@ Name: species_short, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># all variables now have a mean of 0 and std of 1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># all variables now have a mean of 0 and std of 1</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
   <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">scaled_penguins</span><span class="p">[:,</span><span class="n">i</span><span class="p">],</span> <span class="n">hist</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
@@ -511,7 +511,7 @@ Name: species_short, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s import PCA</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s import PCA</span>
 <span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
 <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># we explicitly ask for 2 components</span>
 </pre></div>
@@ -520,7 +520,7 @@ Name: species_short, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># And now we use PCA to transform the data</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># And now we use PCA to transform the data</span>
 <span class="n">pca_penguins</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">scaled_penguins</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -528,7 +528,7 @@ Name: species_short, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pca_penguins</span><span class="o">.</span><span class="n">shape</span> <span class="c1"># 334 rows, 2 columns - just as we wanted</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pca_penguins</span><span class="o">.</span><span class="n">shape</span> <span class="c1"># 334 rows, 2 columns - just as we wanted</span>
 </pre></div>
 </div>
 </div>
@@ -544,7 +544,7 @@ Since we now have 2 dimension describing each observation, we can plot them agai
 Check out the chapter in the book: <a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html">https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">pca_penguins</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">pca_penguins</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">hue</span> <span class="o">=</span> <span class="n">penguins</span><span class="p">[</span><span class="s1">&#39;species_short&#39;</span><span class="p">]</span> <span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">pca_penguins</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">pca_penguins</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">hue</span> <span class="o">=</span> <span class="n">penguins</span><span class="p">[</span><span class="s1">&#39;species_short&#39;</span><span class="p">]</span> <span class="p">)</span>
 
 <span class="c1"># note that we are using numpy-indexing [:,0] means: all rows and only first column!!!</span>
 
@@ -565,7 +565,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 <a class="reference external" href="https://youtu.be/nq6iPZVUxZU">https://youtu.be/nq6iPZVUxZU</a> check out that excellent talk by Leland McInnes or <a class="reference external" href="https://arxiv.org/abs/1802.03426">https://arxiv.org/abs/1802.03426</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s load umap and instantiate it 2-components is standard and we don&#39;t need to specify it</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s load umap and instantiate it 2-components is standard and we don&#39;t need to specify it</span>
 
 <span class="kn">import</span> <span class="nn">umap</span>
 <span class="n">reducer</span> <span class="o">=</span> <span class="n">umap</span><span class="o">.</span><span class="n">UMAP</span><span class="p">()</span>
@@ -575,7 +575,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s reduce the scalded data - same syntax as sklearn :-) </span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s reduce the scalded data - same syntax as sklearn :-) </span>
 
 <span class="n">umap_penguins</span> <span class="o">=</span> <span class="n">reducer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">scaled_penguins</span><span class="p">)</span>
 <span class="n">umap_penguins</span><span class="o">.</span><span class="n">shape</span>
@@ -590,7 +590,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s plot the matrix</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s plot the matrix</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">umap_penguins</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">umap_penguins</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">hue</span> <span class="o">=</span> <span class="n">penguins</span><span class="p">[</span><span class="s1">&#39;species_short&#39;</span><span class="p">]</span> <span class="p">)</span>
 </pre></div>
@@ -611,7 +611,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 <p>We will try out <strong>K-means</strong> and <strong>hierarchical clustering</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># we import kmeans</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># we import kmeans</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
 </pre></div>
 </div>
@@ -619,7 +619,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># and instantiate it where we need to specify that we want it to create 3 clusters</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># and instantiate it where we need to specify that we want it to create 3 clusters</span>
 
 <span class="n">clusterer</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">clusterer</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_penguins</span><span class="p">)</span> <span class="c1">#we only fit here, since no data needs to be transformed</span>
@@ -636,7 +636,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># now let&#39;s see how well the clusters fit with the species</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># now let&#39;s see how well the clusters fit with the species</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">umap_penguins</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">umap_penguins</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">hue</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">labels_</span> <span class="p">)</span>
 </pre></div>
@@ -651,7 +651,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># we can check out a cross-tab with clusters vs. species</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># we can check out a cross-tab with clusters vs. species</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">clusterer</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span> <span class="n">penguins</span><span class="p">[</span><span class="s1">&#39;species_short&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
@@ -712,7 +712,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 <p>Now let’s turn to hierarchical clustering - the procedure is the same, we just need to swap the algorithm name</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">AgglomerativeClustering</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">AgglomerativeClustering</span>
 <span class="n">clusterer</span> <span class="o">=</span> <span class="n">AgglomerativeClustering</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scaled_penguins</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">umap_penguins</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">umap_penguins</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">hue</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">labels_</span> <span class="p">)</span>
 </pre></div>
@@ -727,7 +727,7 @@ Now let’s try out UMAP, a new dimensionality reduction algorightm that comes w
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s do the cross-tab with clusters vs. species</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s do the cross-tab with clusters vs. species</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">clusterer</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span> <span class="n">penguins</span><span class="p">[</span><span class="s1">&#39;species_short&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
