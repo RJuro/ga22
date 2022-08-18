@@ -6,6 +6,8 @@ root: index
 
 chapters:
 - file: info/prepare.md
-- file: tutorials/intro_UML.ipynb
+- file: lecture1.md
+  sections:
+  - file: tutorials/intro_UML.ipynb
 
 
