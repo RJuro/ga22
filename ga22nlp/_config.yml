@@ -42,3 +42,5 @@ html:
 # HTML-specific settings
 html:
   favicon                   : "static/img/favicon.png"  # A path to a favicon image
+
+  
