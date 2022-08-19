@@ -1,6 +1,6 @@
 # Globelics Academy 2022
 ## Data Science Workshop 🚀
-### Roman Jurowetzki, Aalborg University Business School
+**Roman Jurowetzki, Aalborg University Business School**
 
 
 ```{figure} https://source.unsplash.com/5zLhWqntDQA
