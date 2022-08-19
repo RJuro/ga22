@@ -27,9 +27,12 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://rjuro.com/ga22/  # Online location of your book
-  path_to_book:   # Optional path to your book, relative to the repository root
+  url: https://github.com/RJuro/ga22  # Online location of your book
+  path_to_book: ga22  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -43,6 +46,3 @@ html:
 html:
   favicon                   : "static/img/favicon.png"  # A path to a favicon image
 
-  
-launch_buttons:
-  colab_url: "https://colab.research.google.com"
