@@ -7,8 +7,9 @@ root: index
 chapters:
 - file: info/prepare.md
 
-#- file: lecture1.md
-#  sections:
-#  - file: tutorials/intro_UML.ipynb
-
+- file: lecture1.md
+- file: tutorials/intro_UML.ipynb
+- file: tutorials/networks_hands_on_in_python.ipynb
+- file: tutorials/LDA_Cordis.ipynb
+- file: tutorials/BERTopic_Cordis.ipynb
 
