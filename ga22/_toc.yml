@@ -5,11 +5,15 @@ format: jb-book
 root: index
 
 chapters:
-- file: info/prepare.md
-
-- file: lecture1.md
+- file: neurotech.md
+  title: Recent Work - Neurotech Mapping
 - file: tutorials/intro_UML.ipynb
-- file: tutorials/networks_hands_on_in_python.ipynb
+  title: Intro to UML/Clustering
 - file: tutorials/LDA_Cordis.ipynb
+  title: NLP - LDA Topic Modeling
 - file: tutorials/BERTopic_Cordis.ipynb
+  title: NLP - BERTopic Modeling
+- file: tutorials/networks_hands_on_in_python.ipynb
+  title: Intro to Networks
+- file: prepare.md
 
